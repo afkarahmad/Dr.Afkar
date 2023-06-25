@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"/><style>
+@media screen and (min-width:600px) {
+  .card{
+ float:left;
+ margin-left:19px;
+ width: 300px;
+ height:360px;
+  
+  }
+  
+ .card img{
+   float: right;
+    margin-top:20px;
+    margin-right:10px;
+ 
+ } 
+  
+}
+@media screen and (max-width:600px) {
+  .card{
+ width: 260px;
+   }
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{margin:0;
+font-family:Arial;
+height: 100%;
+background:#f5f5f5;
+user-select:none;
+
+}
+.nav{
+  height: 40px;
+      width:100%;
+background:linear-gradient(to left,#3ab3e3,#3a69d7);
+     margin-top:0px;
+     position:fixed;
+     top:0;
+}
+.nav h3{color:white;
+        margin-top:9px;
+        margin-left:7px;
+        
+
+}
+
+ .menuicn{
+   float: left;
+  height: 31px;
+  width: 40px;
+  position: fixed;
+  top:5px;
+  right:10px;
+  border-radius:4px;
+}
+
+.menuicn div{
+  margin-top:4px;
+  height: 5px;
+  width: 35px;
+  background: #454545;
+}
+
+ .menuicn:hover{ opacity:0.5;}
+
+.nav2{
+
+      display:none;
+      top:36px;
+      height: 40px;
+      width:100%;
+      background: linear-gradient(to left,#3ab3e3,#3a69d7);
+     margin-top:0px;
+     position: fixed;  
+     z-index:1;
+     overflow: auto;
+     -webkit-animation:cc 0.4s;
+     animation:cc 0.4s;
+}
+@-webkit-keyframes cc{
+  from{width: 0; }
+
+  to{width:100%; }
+}
+.nav2 button{
+  float:left;
+  margin-top:8px;
+  border:0;
+  background: 0;
+  color:#fff;
+  padding:7px 2%;
+  overflow:hidden;
+    transition: 0.1s;
+    outline: 0;
+
+}
+.nav2 button:active{color:#0000ff;}
+.nav2 button.active{
+  font-weight:bold;
+  color:#00ffff;
+  border-bottom: 3px solid #00ffff;
+}
+
+.home{
+  margin-top:90px;
+
+
+} 
+
+.card{
+  padding:40px 1px;
+  box-shadow: 0px 1px 2px black;
+
+  border-top:3px solid #3ab3e3;
+  border-radius:6px;
+  background:#fff;
+  margin-bottom:35px;
+  
+
+
+}
+
+.tabcontent {
+overflow: auto;
+  display: none;
+  margin-top:100px;
+ -webkit-animation:ccA 0.4s;
+     animation:ccA 0.4s;
+}
+
+@-webkit-keyframes ccA{
+  from{-webkit-filter: blur(4px);margin-left:-300px; }
+
+  to{-webkit-filter: blur(0px);margin-left:0px; }
+}
+
+
+
+
+
+
+input[type=text]{
+  border: 1px solid #aaa;
+  margin-bottom:2px;
+  outline: 0;
+}
+
+select{
+  background: #fff;
+  border:1px solid #aaa;
+font-size:10px;
+outline: 0;
+width: 180px;
+height: 20px;}
+
+
+
+textarea{
+  margin-top:7px;
+  border:1px solid #aaa;
+  outline: 0;
+  max-width:180px;
+  min-width:180px;
+  width: 180px;
+  
+
+}
+
+
+.sbmt{
+  outline: 0;
+  border: 0;
+  margin-top:20px;
+  padding:5px 30px;
+  background:linear-gradient(to left,#3ab3e3,#3a69d7);
+  color:#fff;
+    transition: 0.7s;
+
+
+}
+.sbmt:active{
+  
+background:#00ffff;  
+color:#0000ff;  
+
+  }
+
+</style>
+
+</head>
+<body>
+
+
+
+
+
+<div  id="Home"class="tabcontent"style="display: block;">
+
+
+
+<center>
+
+
+<div class="card"><form action="http://localhost:8080/action_page.php"method="post">
+<img src="splash_screen.png"height="100px">
+<h4 style="font-size: 20px;">Ask questions</h4>
+<p style="color:#a6a6a6;
+font-weight:bold;">you will surely get the answer</p>
+
+<input type="text"name="name"placeholder=" Subject"autocomplete="off"required>
+<input type="text"name="subject"placeholder=" Question is here.."autocomplete="off"required>
+<textarea rows="5"cols="22"placeholder="discribe the problem"name="discription"autocomplete="off"required>
+</textarea>
+
+<br>
+<select name="Type">
+<option>Busyness</option>
+<option>Social media</option>
+<option>Gaming</option>
+<option>Other</option>
+
+
+</select>
+<br>
+
+<input type="submit"class="sbmt"value="Send">
+
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+<div class="card"><h3>Contact the web <br>designer</h3>
+<br>
+ <img src="https://i.ibb.co/NmcdLtF/327326582-1991060381237922-2469634082887524640-n.jpg" alt="please turn on mobile network" style="height:100px; border-radius:10px;">
+     
+     
+<br>
+<p style="font-size: 13px;">This website was created by <br>
+<strong>Dr.Afkar Ahmad</strong><br> 
+
+<button class="sbmt"onclick="openCity(event, 'contact')">
+Contact</button></p>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="card"><h3>Smart Galexy</h3>
+<p style="color:#aaa;"><b>A technical chennel</b></p>
+
+<p style="font-size: 13px;">This is an official website, here you will get the answers to the questions you ask in your email after some time. Download the<br>Smart Galaxy app to ask unlimited questions.And you can also join as member with the app. <br>
+
+<br> 
+
+<button class="sbmt"onclick="alert('Download faled, please try again later!!!');">
+Download App</button>
+
+
+
+
+ 
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</center>
+
+
+<div  id="offers"class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="contact"class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="nav">
+<h3><b style="color:#00ffff;">Afkar</b> Ahmad</h3>
+
+<div class="menuicn"onmousedown="dp();"><center>
+<div></div>
+<div></div>
+<div></div>
+
+
+</div>
+</div>
+<div class="nav2"id="id01">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'offers')">Offers</button>
+  <button class="tablinks" onclick="openCity(event, 'contact')">contact</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function dp(){
+  document.getElementById('id01').style.cssText='display:block;'
+}
+function openCity(evt, cityName) {
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</body>
+
+
+</html>
